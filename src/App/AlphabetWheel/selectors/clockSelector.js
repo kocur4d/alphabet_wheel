@@ -14,6 +14,7 @@ const outerClockSelector = createSelector(
     const wc = new WheelCalculator(count)
     wc.init()
     wc.scaleVertices(radius)
+    wc.rotateVertices(-90)
     return wc.coordinates()
   }
 )
