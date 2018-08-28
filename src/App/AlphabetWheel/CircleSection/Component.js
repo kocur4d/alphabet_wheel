@@ -1,10 +1,11 @@
 import React from 'react'
-import { randomColor } from '../../../helpers.js' 
 import _round from 'lodash/round'
 import {
   subset,
   index,
 } from 'mathjs'
+
+const randomColor = () => '#'+(Math.random()*0xFFFFFF<<0).toString(16)
 
 const CircleSection = ({
   matrix,
