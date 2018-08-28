@@ -1,10 +1,12 @@
 import { connect } from 'react-redux'
+import { createStructuredSelector } from 'reselect'
 
+import outerClockSelector from './selectors/outerClockSelector.js'
 import AlphabetWheel from './Component.js'
 
-const mapStateToProps = (state) => ({
-  outerClock: state.getIn(['alphabetWheel', 'outerCircle']).toJS(),
-  radius: state.getIn(['alphabetWheel', 'radius']),
+const mapStateToProps = createStructuredSelector({
+  outerClock: outerClockSelector,
+  radius: state => state.getIn(['alphabetWheel', 'radius']),
 })
 
 const mapDispatchToProps = (dispatch) => ({
