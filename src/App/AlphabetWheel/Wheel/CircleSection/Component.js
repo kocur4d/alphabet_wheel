@@ -17,7 +17,11 @@ const CircleSection = ({
   const x2 = _round(subset(matrix, index(0, 1)))
   const y2 = _round(subset(matrix, index(1, 1)))
 
-  return <path d={`M0,0 L${x1},${y1} A${radius},${radius} 0 0 1 ${x2},${y2}Z`} fill={randomColor()}/>
+  return <path
+    d={`M0,0 L${x1},${y1} A${radius},${radius} 0 0 1 ${x2},${y2}Z`}
+    fill={randomColor()}
+    strokeWidth='2'
+  />
 }
 
 export default CircleSection

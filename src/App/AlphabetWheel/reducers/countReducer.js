@@ -1,6 +1,4 @@
-import Immutable from 'immutable'
-
-const initialState = 4 
+const initialState = 26 
 
 export default (state = initialState, action) => {
   switch(action.type) {

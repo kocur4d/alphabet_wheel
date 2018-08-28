@@ -1,25 +1,15 @@
 import React from 'react'
-import _map from 'lodash/map'
 
-import CircleSection from './CircleSection'
+import Wheel from './Wheel'
+import Circle from './Circle'
 
-const AlphabetWheel = ({
-  outerClock,
-  radius,
-}) => (
+const AlphabetWheel = () => (
   <div>
-    <svg width="400" height="400" viewBox="0 0 400 400">
-      <g transform="translate(200,200)" stroke="#000" strokeWidth="2">
-        {
-          _map(
-            outerClock,
-            (matrix, index) =>
-              <CircleSection key={index}
-                matrix={matrix}
-                radius={radius}
-              />
-          )
-        }
+    <svg width="600" height="600" viewBox="0 0 600 600">
+      <g transform="translate(300,300)" stroke="#000">
+        <Wheel />
+        <Wheel radiusFix={-40} />
+        <Circle radiusFix={-80} />
       </g>
     </svg>
   </div>

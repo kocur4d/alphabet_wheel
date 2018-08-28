@@ -3,7 +3,7 @@ import { createSelector } from 'reselect'
 import WheelCalculator from '../lib/WheelCalculator.js'
 
 const countSelector = (state) => state.getIn(['alphabetWheel', 'count'])
-const radiusSelector = (state) => state.getIn(['alphabetWheel', 'radius'])
+export const radiusSelector = (state, {radiusFix = 0}) => state.getIn(['alphabetWheel', 'radius']) + radiusFix
 
 const outerClockSelector = createSelector(
   [
@@ -13,7 +13,6 @@ const outerClockSelector = createSelector(
   (count, radius) => {
     const wc = new WheelCalculator(count)
     wc.init()
-    wc.rotateVertices(45)
     wc.scaleVertices(radius)
     return wc.coordinates()
   }
