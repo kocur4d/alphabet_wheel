@@ -9,7 +9,7 @@ const Wheel = ({
   wheel,
   radius,
   backgroundColor,
-}) => (
+} = {}) => (
   _map(
     wheel,
     (matrix, index) =>

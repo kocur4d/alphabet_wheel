@@ -1,9 +1,13 @@
 import React from 'react'
 
 import AlphabetWheel from './AlphabetWheel'
+import Counter from './Counter'
+
+import './style.css'
 
 const App = () => (
-  <div>
+  <div className='app'>
+    <Counter />
     <AlphabetWheel />
   </div>
 )

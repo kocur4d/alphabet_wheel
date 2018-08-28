@@ -5,8 +5,6 @@ import {
   index,
 } from 'mathjs'
 
-const randomColor = () => '#'+(Math.random()*0xFFFFFF<<0).toString(16)
-
 const CircleSection = ({
   matrix,
   radius,
@@ -21,7 +19,6 @@ const CircleSection = ({
 
   const letterX = _round(0.5*(x2 + x1) * 0.9)
   const letterY = _round(0.5*(y2 + y1) * 0.9)
-  console.log(letterX, ' : ', letterY)
 
   return <React.Fragment>
     <path
