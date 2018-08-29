@@ -3,6 +3,9 @@
 # vim
 *.swp
 
+# intellij
+/.idea
+
 # dependencies
 /node_modules
 

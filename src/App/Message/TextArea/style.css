@@ -1,9 +1,13 @@
 .textarea {
-  margin: 10px 0;
-  padding: 0 20px; }
+  margin-left: 50px;
+  margin-right: 30px; }
   .textarea p {
     font-weight: bold;
+    color: #1D527B;
+    font-size: 25px;
     margin: 5px 0; }
   .textarea textarea {
+    background-color: antiquewhite;
+    opacity: 0.8;
     resize: none;
     width: 100%; }
