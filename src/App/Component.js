@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 import AlphabetWheel from './AlphabetWheel'
 import Counter from './Counter'
@@ -7,17 +7,15 @@ import Header from "./Header";
 
 import './style.css'
 
-
 const App = () => (
-    <Fragment>
-        <Header/>
-        <div className='app'>
-            <Counter/>
-            <AlphabetWheel/>
-            <Message/>
-        </div>
-    </Fragment>
-
+  <div className='app'>
+    <Header/>
+    <div className='main'>
+      <Counter/>
+      <AlphabetWheel/>
+      <Message/>
+    </div>
+  </div>
 )
 
 export default App

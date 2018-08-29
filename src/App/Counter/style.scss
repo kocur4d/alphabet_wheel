@@ -1,51 +1,32 @@
 .counter {
   display: flex;
-  padding: 0 20px;
   flex-flow: column nowrap;
   justify-content: center;
-  //button {
-  //  height: 60px;
-  //  font-size: 22px;
-  //  line-height: 60px;
-  //  color: white;
-  //  text-align: center;
-  //  background: #f39c12;
-  //  border: 0;
-  //  cursor: pointer;
-  //  position: relative;
-  //  vertical-align: top;
-  //  &:disabled {
-  //    cursor: default;
-  //    background: grey;
-  //  }
-  //}
-
-  .arrow-up {
+  align-items: center;
+  .arrow {
     width: 0;
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-bottom: 60px solid #E1C894;
-  }
-
-  .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-top: 60px solid #E1C894;
-  }
-
-  .disable {
-    pointer-events: none;
-    border-top: 60px solid darkgray;
+    &.up {
+      border-bottom: 60px solid #2ecc71;
+      &.disable {
+        pointer-events: none;
+        border-bottom: 60px solid darkgray;
+      }
+    }
+    &.down {
+      border-top: 60px solid #2ecc71;
+      &.disable {
+        pointer-events: none;
+        border-top: 60px solid darkgray;
+      }
+    }
   }
 
   h2 {
-    width: 120px;
-    text-align: center;
     font-size: 50px;
-    color: antiquewhite;
+    color: #3498db;
   }
 }
 
