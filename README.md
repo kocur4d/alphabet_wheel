@@ -8,3 +8,9 @@ yarn install
 ```
 npm start
 ```
+
+# Development
+
+```
+yarn run watch-css
+```
