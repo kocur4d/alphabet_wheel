@@ -1,9 +1,10 @@
 .textarea {
-  margin: 10px 0;
-  padding: 0 20px; }
+  margin: 30px; }
   .textarea p {
-    font-weight: bold;
+    color: #3498db;
+    font-size: 25px;
     margin: 5px 0; }
   .textarea textarea {
+    background-color: white;
     resize: none;
     width: 100%; }

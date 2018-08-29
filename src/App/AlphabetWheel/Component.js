@@ -8,15 +8,17 @@ const AlphabetWheel = () => (
     <svg width="600" height="600" viewBox="0 0 600 600">
       <g transform="translate(300,300)" stroke="#000">
         <Wheel
-          backgroundColor='#9a4a96'
+          letterRatio={0.83}
+          backgroundColor='#3498db'
         />
         <Wheel
-          radiusFix={-60}
+          letterRatio={0.75}
+          radiusFix={-100}
           rotate={true}
-          backgroundColor='#136683'
+          backgroundColor='#2ecc71'
         />
         <Circle
-          radiusFix={-120}
+          radiusFix={-200}
         />
       </g>
     </svg>

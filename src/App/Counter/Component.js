@@ -5,12 +5,20 @@ import './style.css'
 const Counter = ({
   count,
   counterClicked,
-}) => (
-  <div className='counter'>
-    <button onClick={() => counterClicked(true)} disabled={count === 25}>UP</button>
+}) => {
+  const disabledUpClass = count === 25 ? 'disable' : null
+  const disabledDownClass = count === 0 ? 'disable' : null
+  return <div className='counter'>
+    <div
+      className={['arrow', 'up', disabledUpClass].join(' ')}
+      onClick={() => counterClicked(true)}
+    />
     <h2>{count}</h2>
-    <button onClick={() => counterClicked(false)} disabled={count === 0}>DOWN</button>
+    <div
+      className={['arrow', 'down', disabledDownClass].join(' ')}
+      onClick={() => counterClicked(false)}
+    />
   </div>
-)
+}
 
 export default Counter

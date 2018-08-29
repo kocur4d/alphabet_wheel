@@ -1,17 +1,8 @@
 .app {
-  h1 {
-    width: 1200px;
-    margin: 20px auto;
-    font-size: 350%;
-    text-align: center;
-    font-family: 'Times New Roman';
-  }
+  width: 1200px;
+  margin: auto;
   .main {
-    width: 1200px;
-    margin: auto;
     display: grid;
-    padding: 0 100px;
     grid-template-columns: 200px 600px 400px;
-    font-family: 'Poppins';
   }
 }

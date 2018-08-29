@@ -1,0 +1,7 @@
+.section .path {
+  transition: all 0.1s ease; }
+
+.section .text {
+  fill: white;
+  stroke: none;
+  font-size: 20px; }
