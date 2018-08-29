@@ -8,9 +8,12 @@ import './style.css'
 
 const App = () => (
   <div className='app'>
-    <Counter />
-    <AlphabetWheel />
-    <Message />
+    <h1>Caesar cipher</h1>
+    <div className='main'>
+      <Counter />
+      <AlphabetWheel />
+      <Message />
+    </div>
   </div>
 )
 
