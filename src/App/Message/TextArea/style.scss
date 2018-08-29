@@ -1,0 +1,12 @@
+.textarea {
+  margin: 10px 0;
+  padding: 0 20px;
+  p {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+  }
+}

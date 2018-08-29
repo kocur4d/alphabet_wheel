@@ -1,5 +1,4 @@
 import React from 'react'
-import _round from 'lodash/round'
 import {
   subset,
   index,
@@ -11,14 +10,14 @@ const CircleSection = ({
   letter,
   backgroundColor,
 }) => {
-  const x1 = _round(subset(matrix, index(0, 0)))
-  const y1 = _round(subset(matrix, index(1, 0)))
+  const x1 = subset(matrix, index(0, 0))
+  const y1 = subset(matrix, index(1, 0))
 
-  const x2 = _round(subset(matrix, index(0, 1)))
-  const y2 = _round(subset(matrix, index(1, 1)))
+  const x2 = subset(matrix, index(0, 1))
+  const y2 = subset(matrix, index(1, 1))
 
-  const letterX = _round(0.5*(x2 + x1) * 0.9)
-  const letterY = _round(0.5*(y2 + y1) * 0.9)
+  const letterX = 0.5*(x2 + x1) * 0.9
+  const letterY = 0.5*(y2 + y1) * 0.9
 
   return <React.Fragment>
     <path

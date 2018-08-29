@@ -1,13 +1,13 @@
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { radiusSelector } from '../selectors/clockSelector.js'
-import clockSelector from '../selectors/clockSelector.js'
+import { radiusSelector } from './selectors.js'
+import wheelSelector from './selectors.js'
 
 import Wheel from './Component.js'
 
 const mapStateToProps = createStructuredSelector({
-  wheel: clockSelector,
+  wheel: wheelSelector,
   radius: radiusSelector,
 })
 
