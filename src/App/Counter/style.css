@@ -8,13 +8,13 @@
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-bottom: 60px solid #f39c12; }
+    border-bottom: 60px solid #E1C894; }
   .counter .arrow-down {
     width: 0;
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 60px solid #f39c12; }
+    border-top: 60px solid #E1C894; }
   .counter .disable {
     pointer-events: none;
     border-top: 60px solid darkgray; }
