@@ -1,3 +1,7 @@
+# Demo
+
+https://kocur4d.github.io/alphabet_wheel/
+
 # Install
 ```
 git clone git@github.com:kocur4d/alphabet_wheel.git
